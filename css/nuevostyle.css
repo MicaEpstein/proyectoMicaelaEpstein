@@ -1,0 +1,468 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+h2{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 40px; 
+    padding-bottom: 3%;
+}
+h4 {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px; 
+    padding-bottom: 3%;   
+}
+p{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding-bottom: 3%;
+}
+@media screen and (min-width:600px) {
+    
+
+    .header{
+        background-color: black;
+        display: flex;
+        width: 100%;
+        height: 100px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .headerLogo{
+        padding-left: 5%;
+        width: 20%;
+    }
+    .headerNav{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 5%;
+    }
+    .headerLista li{
+        list-style-type: none;
+        display: inline-block;
+        padding: 0rem 1rem;
+    }
+
+    /*Seccion carrusel*/
+    .banner{
+        grid-area: banner;
+    }
+    .bannerFoto{
+        width: 100%;
+    }
+
+    /*Secciones Sobre mi y Formulario*/
+    .grillaIndex{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+        "foto info"
+        "txt formulario";
+    }
+    .mainFoto{
+        grid-area: foto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 5%;
+        width: 90%;
+    }
+    .mainInfo{
+        grid-area: info;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 90%;
+        padding: 2% 2%;
+        margin-right: 4%;
+        text-align: justify;
+    }
+    .newsText{
+        grid-area: txt;
+        width: 90%;
+        margin-left: 2%;
+        padding: 5% 2%;
+    }
+    .newsForm{
+        grid-area: formulario;
+        width: 100%;
+        padding: 5% 2%;
+    }
+    .label {
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 20px; 
+        margin-bottom: 2%;
+    }
+    .input{
+        border: 1px solid #999;
+        border-radius: 0;
+        width: 90%;
+        padding: 2% 0%;
+        margin: 2% 0%;
+    }
+    .button{
+        margin: 3% 0%;
+        width: 25%;
+        height: 1.5rem;
+
+    }
+    input{
+        margin-right: 2%;
+    }
+    /*HTML Contacto*/
+    .grillaContacto{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 200px 150px 550px 450px;
+        grid-template-areas: 
+        "titulo titulo titulo titulo"
+        "icono1 icono2 icono3 icono4"
+        "formtxt formtxt formulario formulario"
+        "mapa mapa mapa mapa";
+    }
+    .mediosContacto{
+        grid-area: titulo;
+        margin-top: 3%;
+        text-align: center;
+    }
+    .mediosContacto p{
+        font-size: 1.5rem;
+    }
+    .estiloBtn{   
+        display: flex;
+        justify-content: center;
+        height: 50%;
+        margin-top: 5%;
+    }
+    .btnIg{
+        grid-area: icono1;
+    }
+    .btnFb{
+        grid-area: icono2;
+    }
+    .btnWp{
+        grid-area: icono3;
+    }
+    .btnEm{
+        grid-area: icono4;
+    }
+    .newsTexto{
+        grid-area: formtxt;
+        margin-left: 10%;
+    }
+    .newsTexto p{
+        font-size: 1.5rem;
+    }
+    .newsForm{
+        grid-area: formulario;
+        padding: 0% 2%;
+    }
+    .mapa{
+        grid-area: mapa;
+        width: 100%;
+    }
+    .inputMensaje{
+        border: 1px solid #999;
+        display: block;
+        border-radius: 0;
+        width: 90%;
+        padding-bottom: 10%;
+        margin: 2% 0%;
+    }
+    /*Footer*/
+    .footer{
+        background-color: black;
+        display: flex;
+        width: 100%;
+        height: 150px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footerLogo{
+        width: 25%;
+        padding-left: 5%;
+    }
+    .seguinos{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+        "seguinos seguinos"
+        "boton boton";
+    }
+    .redes{
+        grid-area: seguinos;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 20px; 
+        margin-bottom: 5%;
+        width: 100%;
+        text-align: center;
+    }
+    .iconosCont{
+        width: 100%;
+        grid-area: boton;
+        display: flex;
+        justify-content: space-around ;
+    }
+    .iconosRedes{
+        width: 10%;
+        list-style-type: none;
+        padding: 0% 5%;
+    }
+    .contacto{
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        padding-right: 5%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+
+    h2{
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 32px; 
+        padding-bottom: 3%;
+    }
+    h4 {
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 18px; 
+        padding-bottom: 3%;   
+    }
+    p{
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        padding-bottom: 3%;
+    }
+    .header{
+        background-color: black;
+        display: flex;
+        width: 100%;
+        height: 100px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .headerLogo{
+        padding-left: 5%;
+        width: 40%;
+    }
+    .headerNav{
+        padding-right: 10%;
+    }
+    .headerLista li{
+        list-style-type: none;  
+    }
+
+    /*Seccion carrusel*/
+    .banner{
+        grid-area: banner;
+    }
+    .bannerFoto{
+        width: 100%;
+    }
+
+    /*Secciones Sobre mi y Formulario*/
+    .grillaIndex{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "foto" 
+        "info"
+        "txt" 
+        "formulario";
+    }
+    .mainFoto{
+        grid-area: foto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 5%;
+        width: 90%;
+    }
+    .mainInfo{
+        grid-area: info;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 90%;
+        margin: 5%;
+        text-align: justify;
+    }
+    .newsText{
+        grid-area: txt;
+        text-align: center;
+        width: 90%;
+        margin: 5%;
+    
+    }
+    .newsForm{
+        grid-area: formulario;
+        width: 100%;
+        margin: 0% 5%;
+    }
+    label {
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 20px; 
+        margin-bottom: 2%;
+    }
+    .input{
+        border: 1px solid #999;
+        border-radius: 0;
+        width: 90%;
+        padding: 2% 0%;
+        margin: 2% 0%;
+    }
+    .button{
+        margin: 3% 0%;
+        width: 25%;
+        height: 1.5rem;
+    }
+    input{
+        margin-right: 2%;
+    }
+
+    /*HTML Contacto*/
+    .grillaContacto{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-areas: 
+        "titulo titulo titulo titulo"
+        "icono1 icono2 icono3 icono4"
+        "formtxt formtxt formtxt formtxt" 
+        "formulario formulario formulario formulario"
+        "mapa mapa mapa mapa";
+    }
+    .mediosContacto{
+        grid-area: titulo;
+        margin-top: 3%;
+        text-align: center;
+    }
+    .mediosContacto p{
+        font-size: 1.5rem;
+    }
+    .estiloBtn{   
+        display: flex;
+        justify-content: center;
+        height: 50%;
+        padding-bottom: 0px;
+    }
+    .btnIg{
+        grid-area: icono1;
+    }
+    .btnFb{
+        grid-area: icono2;
+    }
+    .btnWp{
+        grid-area: icono3;
+    }
+    .btnEm{
+        grid-area: icono4;
+    }
+    .newsTexto{
+        grid-area: formtxt;
+        margin: 5%;
+        text-align: center;
+    }
+    .newsTexto p{
+        font-size: 1.5rem;
+    }
+    .newsForm{
+        grid-area: formulario;
+        margin: 5%;
+    }
+    .mapa{
+        grid-area: mapa;
+        width: 100%;
+    }
+    .inputMensaje{
+        border: 1px solid #999;
+        border-radius: 0;
+        width: 90%;
+        padding-bottom: 10%;
+        margin: 2% 0%;
+    }
+
+
+
+    /*Footer*/
+    .footer{
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+    .footerLogo{
+        width: 50%;
+        padding-bottom: 5%;
+    }
+    .seguinos{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+        "seguinos seguinos"
+        "boton boton";
+    }
+    .redes{
+        grid-area: seguinos;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 20px; 
+        margin-bottom: 5%;
+        width: 100%;
+        text-align: center;
+    }
+    .iconosCont{
+        width: 100%;
+        grid-area: boton;
+        display: flex;
+        justify-content: space-around ;
+    }
+    .iconosRedes{
+        width: 15%;
+        list-style-type: none;
+    
+    }
+    .contacto{
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        margin: 5% 0%;
+    }
+
+
+}

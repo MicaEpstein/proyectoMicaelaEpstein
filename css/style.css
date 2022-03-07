@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.header{
+    grid-area: header;
+    background-color: black;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.headerLogo{
+    padding-left: 5%;
+    width: 20%;
+}
+
+.headerNav{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5%;
+}
+
+.headerLista li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0rem 1rem;
+}
+
+.grillaIndex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px auto 400px 400px 150px;
+    grid-template-areas: 
+    "header header"
+    "banner banner"
+    "sobremi sobremi"
+    "newsletter newsletter"
+    "footer footer";
+}
+
+/*Seccion carrusel*/
+.banner{
+    grid-area: banner;
+
+}
+
+.bannerFoto{
+    width: 100%;
+}
+
+/*Sección sobre mí*/
+
+.sobreMi{
+    grid-area: sobremi;
+    display: flex;
+    margin: 5%;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+}
+
+.mainFoto{
+    width: 80%;
+
+}
+
+.mainInfo{
+    width: 80%;
+}
