@@ -5,10 +5,8 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
-ul li a{
-    text-decoration: none;
-    color: white;
-}
+
+
 h2{
     color: black;
     font-family: 'Montserrat', sans-serif;
@@ -27,65 +25,64 @@ p{
     color: black;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
     padding-bottom: 3%;
 }
 
 .nav-link{
     text-decoration: none;
     color: white;
+    font-size: 1.2rem;
 }
 
-.navbar-toggler-icon{
-    color: white;
+.nav-link:hover{
+    color: rgb(4, 236, 225);
 }
 
-.header{
+.active{
+    color: rgb(138, 138, 138);
+}
+.navbar{
     background-color: black;
     width: 100%;
-    height: 100px;
+    height: 120%;
+    
+}
+
+.navbar-toggler{
+    border: 1px solid #f9fafb;
 }
 
 
-@media screen and (min-width:600px) {
-    
 
-    .header{
-        background-color: black;
-        width: 100%;
-        height: 100px;
-         display: flex; 
-        justify-content: space-between;
-        align-items: center;
-    }
-  
-    .headerLogo{
-        padding-left: 5%;
-        width: 20%;
-    }
-    
+.headerLogo{
+    padding-left: 5%;
+    width: 25%;
+}
 
-    .headerNav{
-        display: flex;
-        justify-content: space-between;
-        padding-right: 5%;
-    }
-    .headerLista li{
-        list-style-type: none;
-        display: inline-block;
-        padding: 0rem 1rem;
-    }
+.navbar-nav{
+    padding-right: 5%;
+}
 
-    /*Seccion carrusel*/
-    .banner{
-        grid-area: banner;
-    }
-    .bannerFoto{
-        width: 100%;
-    }
+.card-group{
+    margin-bottom: 2%;
+}
+.card{
+    margin: 2%;
+}
 
-    /*Secciones Sobre mi y Formulario*/
-    .grillaIndex{
+
+.card-body{
+    text-align: center;
+
+}
+
+
+@media screen and (min-width:991px) {
+
+
+     /*Secciones Sobre mi y Formulario*/
+     .grillaIndex{
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-areas:
@@ -145,6 +142,7 @@ p{
     input{
         margin-right: 2%;
     }
+
     /*HTML Contacto*/
     .grillaContacto{
         width: 100%;
@@ -157,12 +155,12 @@ p{
         "formtxt formtxt formulario formulario"
         "mapa mapa mapa mapa";
     }
-    .mediosContacto{
+    .titulo{
         grid-area: titulo;
         margin-top: 3%;
         text-align: center;
     }
-    .mediosContacto p{
+    .tiutulo p{
         font-size: 1.5rem;
     }
     .estiloBtn{   
@@ -246,6 +244,7 @@ p{
         width: 10%;
         list-style-type: none;
         padding: 0% 5%;
+
     }
     .contacto{
         color: white;
@@ -254,10 +253,10 @@ p{
         font-size: 1rem;
         padding-right: 5%;
     }
+
 }
 
-@media screen and (max-width: 600px) {
-
+@media screen and (max-width: 991px) {
 
     h2{
         color: black;
@@ -279,32 +278,6 @@ p{
         font-weight: 400;
         font-size: 12px;
         padding-bottom: 3%;
-    }
-    .header{
-        background-color: black;
-        display: flex;
-        width: 100%;
-        height: 100px;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .headerLogo{
-        padding-left: 5%;
-        width: 40%;
-    }
-    .headerNav{
-        padding-right: 10%;
-    }
-    .headerLista li{
-        list-style-type: none;  
-    }
-
-    /*Seccion carrusel*/
-    .banner{
-        grid-area: banner;
-    }
-    .bannerFoto{
-        width: 100%;
     }
 
     /*Secciones Sobre mi y Formulario*/
@@ -382,12 +355,12 @@ p{
         "formulario formulario formulario formulario"
         "mapa mapa mapa mapa";
     }
-    .mediosContacto{
+    .titulo{
         grid-area: titulo;
         margin-top: 3%;
         text-align: center;
     }
-    .mediosContacto p{
+    .titulo p{
         font-size: 1.5rem;
     }
     .estiloBtn{   
@@ -483,6 +456,5 @@ p{
         font-size: 1rem;
         margin: 5% 0%;
     }
-
 
 }
